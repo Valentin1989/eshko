@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <header id="header">
+
+        <nav>
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <nav class="navbar">
+
+                        <div class="navbar-header">
+                            <!-- Кнопка с полосочками, которая открывает меню на мобильных устройствах -->
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- Бренд или логотип фирмы (обычно содержит ссылку на главную страницу) -->
+                            <a class="logo" href="index.html">
+                                <img class="img-responsive" src="img/logo2.png" alt="logo">
+                            </a>
+                        </div>
+                        <!-- Содержимое меню (коллекция навигационных ссылок, формы и др.) -->
+                        <div class="collapse navbar-collapse" id="main-menu" >
+                            <!-- Список ссылок, расположенных слева -->
+                            <ul class="nav navbar-nav">
+                                <!--Элемент с классом active отображает ссылку подсвеченной -->
+                                <li><a href="#">О компании</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Курсы <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Иностранные языки <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Английский <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Английский для начинающих Extra</a></li>
+                                                        <li><a href="#">Английский для начинающих<br> Extra + ОНЛАЙН</a></li>
+                                                        <li><a href="#">Английский для начинающих</a></li>
+                                                        <li><a href="#">Английский для среднего уровня Extra</a></li>
+                                                        <li><a href="#">Английский для среднего уровня<br> Extra + ОНЛАЙН</a></li>
+                                                        <li><a href="#">Английский для среднего уровня</a></li>
+                                                        <li><a href="#">Английский для высшего уровня</a></li>
+                                                        <li><a href="#">Английский для высшего уровня<br> Extra + ОНЛАЙН</a></li>
+                                                        <li><a href="#">Деловой английский</a></li>
+                                                        <li><a href="#">Английский для детей</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Польский <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Польский для начинающих<br> + ОНЛАЙН</a></li>
+                                                        <li><a href="#">Польский для начинающих</a></li>
+                                                        <li><a href="#">Польский для среднего уровня</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Немецкий <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Немецкий для начинающих Extra</a></li>
+                                                        <li><a href="#">Немецкий для начинающих Extra<br> + ОНЛАЙН</a></li>
+                                                        <li><a href="#">Немецкий для начинающих</a></li>
+                                                        <li><a href="#">Немецкий для среднего уровня</a></li>
+                                                        <li><a href="#">Немецкий для высшего уровня</a></li>
+                                                        <li><a href="#">Деловой немецкий</a></li>
+                                                        <li><a href="#">Немецкий для детей</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Французский <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Французский для начинающих</a></li>
+                                                        <li><a href="#">Французский для начинающих<br> Extra + ОНЛАЙН</a></li>
+                                                        <li><a href="#">Французский для среднего уровня</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Итальянский <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Итальянский для начинающих</a></li>
+                                                        <li><a href="#">Итальянский для среднего уровня</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Испанский <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Испанский для начинающих</a></li>
+                                                        <li><a href="#">Испанский для начинающих<br> Extra + ОНЛАЙН</a></li>
+                                                        <li><a href="#">Испанский для среднего уровня</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Японский <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Японский для начинающих</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Арабский <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Арабский для начинающих</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Китайский <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Китайский для начинающих</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Турецкий <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Турецкий для начинающих<br> + онлайн</a></li>
+                                                        <li><a href="#">Турецкий для начинающих</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown dropdown-submenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Чешский <i class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Чешский для начинающих</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Бизнес-менеджмент <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Менеджер по логистике</a></li>
+                                                <li><a href="#">Коммерческий представитель</a></li>
+                                                <li><a href="#">Туристический бизнес</a></li>
+                                                <li><a href="#">Искусство эффективных продаж</a></li>
+                                                <li><a href="#">Менеджмент организации</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Офис-менеджмент <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Менеджер по кадрам и заработной плате</a></li>
+                                                <li><a href="#">Секретарь-референт</a></li>
+                                                <li><a href="#">Офис-менеджер</a></li>
+                                                <li><a href="#">Этикет, организация торжеств и деловых мероприятий</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Финансы и учет <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Бухгалтерский учет на ПК</a></li>
+                                                <li><a href="#">Основы бухгалтерского учета</a></li>
+                                                <li><a href="#">Финансовый учет по международным стандартам</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Маркетинг, реклама, PR <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Специалист по маркетингу</a></li>
+                                                <li><a href="#">Журналистика</a></li>
+                                                <li><a href="#">Менеджер по рекламе</a></li>
+                                                <li><a href="#">Менеджер по связям с общественностью (PR-менеджер)</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Искусство и дизайн <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Искусство фотографии</a></li>
+                                                <li><a href="#">Дизайн и оформление интерьера</a></li>
+                                                <li><a href="#">Курс кройки и шитья</a></li>
+                                                <li><a href="#">Садово-парковый дизайн</a></li>
+                                                <li><a href="#">Цветочный дизайн</a></li>
+                                                <li><a href="#">Рисование и живопись</a></li>
+                                                <li><a href="#">Конструирование и дизайн модной одежды</a></li>
+                                                <li><a href="#">Искусство вязания</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Красота и здоровье <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Визажист-стилист</a></li>
+                                                <li><a href="#">Мастер маникюра и педикюра</a></li>
+                                                <li><a href="#">Парикмахерское искусство</a></li>
+                                                <li><a href="#">Современная косметология</a></li>
+                                                <li><a href="#">Секреты современной кухни</a></li>
+                                                <li><a href="#">Нетрадиционная медицина</a></li>
+                                                <li><a href="#">Йога</a></li>
+                                                <li><a href="#">Фитнес и здоровье</a></li>
+                                                <li><a href="#">Курс массажа</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Компьютерные курсы <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">WEB-дизайн</a></li>
+                                                <li><a href="#">Компьютерная графика</a></li>
+                                                <li><a href="#">Компьютерная азбука</a></li>
+                                                <li><a href="#">Программирование для начинающих</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Музыка и танец <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Искусство современного танца</a></li>
+                                                <li><a href="#">Учимся играть на гитаре</a></li>
+                                                <li><a href="#">Играем на клавишных инструментах</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Хобби-курсы <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Астрология</a></li>
+                                                <li><a href="#">Искусство фэн-шуй</a></li>
+                                                <li><a href="#">Парапсихология</a></li>
+                                                <li><a href="#">Карты Таро</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-submenu">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Педагогика и развитие личности <i class="fa fa-angle-right "></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Готовим ребенка к школе</a></li>
+                                                <li><a href="#">Скоростное чтение и запоминание</a></li>
+                                                <li><a href="#">Мини-курс по эффективному <br> усвоению знаний "Учимся учиться"</a></li>
+                                                <li><a href="#">Воспитание ребенка с рождения до 5 лет</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="#">Новые курсы</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Бесплатный урок</a></li>
+                                <li><a href="#">Записаться на курс</a></li>
+                                <li><a href="#">Условия обучения</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Прайс-лист</a></li>
+                            </ul>
+                            <!-- Список ссылок, расположенный справа -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li id="open-popup"><a href="#">Вход <i class="fa fa-user-o"></i></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section class="header-slide">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Маркеры слайдов -->
+            <ol class="carousel-indicators hidden-xs">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Содержимое слайдов -->
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img class="hidden-xs" src="img/1.jpg" alt="...">
+
+                    <div class="carousel-caption slider">
+                        <h1>Образование<br> с доставкой на дом!</h1>
+                        <div class="links">
+                            <a href="#">Записаться на курс</a>
+                            <a href="#">Бесплатный урок</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="hidden-xs" src="img/2.jpg" alt="...">
+
+                    <div class="carousel-caption slider">
+                        <h1>Образование<br> с доставкой на дом!</h1>
+                        <div class="links">
+                            <a href="#">Записаться на курс</a>
+                            <a href="#">Бесплатный урок</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <img class="hidden-xs" src="img/3.jpg" alt="...">
+
+                    <div class="carousel-caption slider">
+                        <h1>Образование<br> с доставкой на дом!</h1>
+                        <div class="links">
+                            <a href="#">Записаться на курс</a>
+                            <a href="#">Бесплатный урок</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <p><span>ЕШКО</span> - Европейская школа корреспондентского обучения предлагает 82
+                    дистанционных курсов в Беларуси. Уже более 25 лет ЕШКО работает в 7 странах Европы и Азии. За 19 лет
+                    работы в Беларуси более 70 тысяч человек стали нашими выпускниками и убедились в эффективности
+                    образовательной методики ЕШКО.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="course">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div>
+                    <div class="col-lg-9 col-md-9 col-sm-6 col-xs-12">
+                        <h2>Дистанционные курсы</h2>
+                    </div>
+
+                    <div class="search col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <input type="search" placeholder="Поиск курса">
+                        <i class="fa fa-search fa-2x"></i>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="first-box">
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Иностранные языки</span>
+                                <p>34 курса <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course1.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Финансы и учет</span>
+                                <p>3 курса <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course2.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Искусство и дизайн</span>
+                                <p>8 курсов <i class="fa fa-angle-double-right"></i></p>
+                             </div>
+                             <img class="img-responsive" src="img/course3.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Красота и здоровье</span>
+                                <p>9 курсов <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course4.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="second-box">
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Бизнес менеджмент</span>
+                                <p>5 курсов <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course5.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Компьютерные курсы</span>
+                                <p>4 курса <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course6.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Педагогика и развитие личности</span>
+                                <p>4 курса <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course7.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Маркетинг, реклама, PR</span>
+                                <p>4 курса <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course8.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="third-box">
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Офис-менеджмент</span>
+                                <p>4 курса <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course9.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Хобби-курсы</span>
+                                <p>4 курса <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course10.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Музыка и танец</span>
+                                <p>3 курса <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course11.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 box">
+                        <a href="#">
+                            <div class="name">
+                                <span>Новые курсы</span>
+                                <p>10 курсов <i class="fa fa-angle-double-right"></i></p>
+                            </div>
+                            <img class="img-responsive" src="img/course12.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="language">
+
+        <div class="container">
+
+            <div class="row">
+                <h2>Языковые курсы ЕШКО признаны №1 в Беларуси</h2>
+                <p>По результатам голосования премии &laquo;Народная марка&raquo;, которая проводится под потранажем<br>
+                Министерства торговли Республики Беларусь.</p>
+
+                <div class="links">
+                    <a href="#">Записаться на курс</a>
+                    <a href="#">Бесплатный урок</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="container">
+
+            <div class="row">
+
+                <ul class="nav nav-pills buttons">
+                    <li><a href="#">Новости <i class="fa fa-angle-double-right"></i></a></li>
+                    <li><a href="#">Отзывы <i class="fa fa-angle-double-right"></i></a></li>
+                    <li><a href="#">Новинки <i class="fa fa-angle-double-right"></i></a></li>
+                    <li><a href="#">Вебинары <i class="fa fa-angle-double-right"></i></a></li>
+                    <li><a href="#">Доставка <i class="fa fa-angle-double-right"></i></a></li>
+                    <li><a href="#">Обсуждения <i class="fa fa-angle-double-right"></i></a></li>
+                    <li><a href="#">Языковые тесты <i class="fa fa-angle-double-right"></i></a></li>
+                    <li><a href="#">Открытые уроки <i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="container hidden-xs">
+
+            <div class="row">
+
+                <div class="second-slider">
+
+                    <div class="col-lg-6">
+
+                        <img class="img-responsive" src="img/london.jpg" alt="">
+
+                        <div class="description">
+                            <p>Новости</p>
+                            <p>Выиграй экскурсию в Лондон!</p>
+                            <a href="#">Подробнее</a>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <img class="img-responsive" src="img/london.jpg" alt="">
+
+                        <div class="description">
+                            <p>Новинки</p>
+                            <p>Немецкий язык для высшего уровня</p>
+                            <a href="#">Подробнее</a>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <img class="img-responsive" src="img/london.jpg" alt="">
+                        <div class="description">
+                            <p>Новости</p>
+                            <p>Выиграй экскурсию в Лондон!</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <img class="img-responsive" src="img/london.jpg" alt="">
+                        <div class="description">
+                            <p>Новинки</p>
+                            <p>Немецкий язык для высшего уровня</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+                    $('.second-slider').slick({
+                        slidesToShow: 2,
+                        responsive: [
+                            {
+                                breakpoint: 992,
+                                settings:{
+                                    slidesToShow: 1
+                                }
+                            }
+                        ]
+                    });
+                </script>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="advantages">
+
+        <div class="container text-center">
+
+            <div class="row">
+
+                <h2>Уникальные преимущества ЕШКО</h2>
+
+                <div class="box-advantages">
+                    <div class="box col-md-3 col-sm-6 col-xs-6">
+                        <div class="circle">
+                            <i class="fa fa-home fa-3x"></i>
+                        </div>
+                        <p>Все учебные пособия<br> вы получите на дом</p>
+                    </div>
+
+                    <div class="box col-md-3 col-sm-6 col-xs-6">
+                        <div class="circle">
+                            <i class="fa fa-users fa-3x"></i>
+                        </div>
+                        <p>Консультация личного<br> преподавателя</p>
+                    </div>
+
+                    <div class="box col-md-3 col-sm-6 col-xs-6">
+                        <div class="circle">
+                            <i class="fa fa-clock-o fa-3x"></i>
+                        </div>
+                        <p>Время и место для занятий<br> вы выбираете сами</p>
+                    </div>
+
+                    <div class="box col-md-3 col-sm-6 col-xs-6">
+                        <div class="circle">
+                            <i class="fa fa-graduation-cap fa-3x"></i>
+                        </div>
+                        <p>Выпускнику -свидетельство<br> ЕШКО. Справка гос. образца</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div>
+                    <div class="box col-md-3 col-sm-6 col-xs-6">
+                        <div class="circle">
+                            <i class="fa fa-file-text-o fa-3x"></i>
+                        </div>
+                        <p>Учебные материалы<br> online</p>
+                    </div>
+
+                    <div class="box col-md-3 col-sm-6 col-xs-6">
+                        <div class="circle">
+                            <i class="fa fa-television fa-3x"></i>
+                        </div>
+                        <p>Бесплатные online<br> вебинары</p>
+                    </div>
+
+                    <div class="box col-md-3 col-sm-6 col-xs-6">
+                        <div class="circle">
+                            <i class="fa fa-flag-o fa-3x"></i>
+                        </div>
+                        <p>Международный<br> кампус ЕШКО</p>
+                    </div>
+
+                    <div class="box col-md-3 col-sm-6 col-xs-6">
+                        <div class="circle">
+                            <i class="fa fa-credit-card fa-3x"></i>
+                        </div>
+                        <p>Рассрочка оплаты</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-5 col-md-5">
+
+                    <ul>
+                        <li class="hidden-xs">ЕШКО в соц. сетях</li>
+                        <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vk fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-odnoklassniki fa-2x"></i></a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-7 col-md-7">
+                    <p>ЕШКО Copyright &copy; 1992-2017</p>
+                    <p class="countries"><span>Международная семья ЕШКО</span> Украина / Россия / Казахстан / Польша / Голландия / Венгрия / Румыния / Испания</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Иностранное унитарное образовательное предприятие &laquo;ЕШКО&raquo;, УНП 101491292 Республика
+                        Беларусь, 220118, г.Минск, ул. Шишкина, 32, пом.8, Свидетельство о государственной регистрации
+                        юридического лица выдано Минским горисполкомом 23 июня 2014г. № 101491292, Свидетельство о
+                        государственной регистрации издателя, изготовителя, распространителя печатных изданий выдано
+                        Министерством информации Республики Беларусь 11 апреля 2016 г. за №3/1249</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <div class="up text-center hidden-xs">
+        <a class="ancLinks" href="#header"><i class="fa fa-long-arrow-up fa-2x"></i></a>
+    </div>
+
+
+    <div class="popup">
+
+        <span class="close-popup"><i class="fa fa-times fa-2x"></i></span>
+
+        <div class="content">
+
+            <div id="modal1" class="popup-main">
+
+                <p><img src="img/user.png" alt=""><br>Вход</p>
+
+                <div class="choose">
+
+                    <div class="col-xs-6 devider">
+                        <div id="campus">
+                            <h2>В Кампус</h2>
+                            <img src="img/flag.png" alt="">
+                        </div>
+                        <p>Социальная сеть ЕШКО</p>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div id="student">
+                            <h2>Для студентов</h2>
+                            <img src="img/user-modal.png" alt="">
+                        </div>
+                        <p>Ознакомиться с правилами поведения в кампусе вы можете <a href="#">здесь</a></p>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <a href="#">Регистарция</a>
+
+            </div>
+
+            <div id="modal2" class="enter-campus">
+
+                <span class="back"><i class="pull-left fa fa-chevron-left fa-2x"></i></span>
+
+                <img src="img/flag.png" alt="">
+                <p>Вход в Кампус</p>
+
+                <form class="form-horizontal">
+
+                    <div>
+                        <input type="text" placeholder="Логин">
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Пароль">
+                    </div>
+
+                    <button class="enter" type="submit">Войти</button>
+
+                </form>
+
+                <div>
+                    <a class="pass" href="#">Забыли пароль?</a>
+                </div>
+
+                <div>
+                    <a class="reg" href="#">Регистарция</a>
+                </div>
+
+            </div>
+
+            <div id="modal3" class="enter-student">
+
+                <span class="back"><i class="fa fa-chevron-left fa-2x"></i></span>
+
+                <img src="img/user-modal.png" alt="">
+                <p>Вход для студента</p>
+
+                <form class="form-horizontal">
+
+                    <div>
+                        <input type="text" placeholder="Логин">
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Пароль">
+                    </div>
+
+                    <button class="enter" type="submit">Войти</button>
+
+                </form>
+
+                <div>
+                    <a class="pass" href="#">Забыли пароль?</a>
+                </div>
+
+                <div>
+                    <a class="reg" href="#">Регистарция</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
